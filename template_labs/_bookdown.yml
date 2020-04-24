@@ -1,5 +1,6 @@
 book_filename: "template_book"
 delete_merged_file: true
+output_dir: "../docs/labs"
 language:
   ui:
     chapter_name: "Chapter "
