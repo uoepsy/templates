@@ -1,0 +1,95 @@
+# Introduction {#intro}
+
+<div class="lo">
+<h3 style="margin: 0;"> Learning outcomes using h3 </h3>
+
+1. First
+2. Second
+3. Third
+
+<h4 style="margin: 0;"> Learning outcomes using h4 </h4>
+
+1. First
+2. Second
+3. Third
+</div>
+
+
+Test questions.
+
+The code is in dropdowns.R file, which is sourced at the start of the bookdown.	
+the .css and toggling script is included in toggling.html, which is then included in_header in the yaml.
+
+`r qbegin()`	
+This is the first question.	
+`r qend()`	
+
+`r solbegin()`	
+Hello, I'm a solution.	
+`r solend()`	
+
+`r qbegin()`	
+Question again.	
+`r qend()`	
+
+`r solbegin()`	
+The solution is Peppa pig. 	
+
+I think these will just number through the whole book, so it won't reset each chapter, which is not ideal.
+`r solend()`	
+
+:::green	
+This is a green box	
+:::	
+
+:::frame	
+This is a frame :)
+I am trying to add more lines to see what happens.
+Who knows!
+:::	
+
+
+:::frame	
+### Frame with header h3 {-}
+
+This is a another frame, but with a header.
+I am trying to add more lines to see what happens.
+Who knows!
+:::	
+
+:::frame	
+<h4 style="margin: 0;"> Frame with header h4 </h4>
+
+This is a another frame, but with a header.
+I am trying to add more lines to see what happens.
+Who knows!
+:::	
+
+:::frame	
+**Frame with header as bold text**
+
+This is a another frame, but with a header.
+I am trying to add more lines to see what happens.
+Who knows!
+:::	
+
+
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].

@@ -1,0 +1,130 @@
+/* Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans|Work+Sans:400,400italic,500,600,700);
+
+.book .book-body {
+   font-family: 'Work Sans', sans;
+}
+
+h1 {
+  font-family: 'Work Sans', sans;
+  font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans;
+  font-weight: 600;
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+
+
+/* Boxes */
+
+div.lo, div.blue, div.red, div.green, div.yellow, div.frame { 
+  border-radius: 5px; 
+  padding: 15px 20px 5px 20px; 
+  margin-bottom: 15px; 
+}
+
+.lo, .blue { 
+  background-color:#d9edf7 !important; 
+}
+
+.green { 
+  background-color:#dff0d8 !important; 
+}
+
+.yellow { 
+  background-color:#fcf8e3 !important; 
+}
+
+.red { 
+  background-color:#F3E3E5 !important; 
+}
+
+.frame {
+  border: 1px solid #333333 !important; 
+}
+
+
+
+/* Questions and solutions */
+
+.question-begin, .solution-begin {
+    padding: 10px 20px 10px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 15px;
+    font-weight: 600; 
+}
+
+.question-begin {
+    background: #F3E3E5;
+    border-bottom: 1px solid #F3E3E5;
+    border-left: 1px solid #F3E3E5;
+    border-right: 1px solid #F3E3E5;
+}
+
+.solution-begin {
+    background: #dff0d8;
+    border-bottom: 1px solid #dff0d8;
+    border-left: 1px solid #dff0d8;
+    border-right: 1px solid #dff0d8;
+    position: relative;
+}
+
+
+.question-body, .solution-body {
+    padding: 10px 20px 1px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.question-body {
+    background: #ffffff;
+    border-bottom: 1px solid #F3E3E5;
+    border-left: 1px solid #F3E3E5;
+    border-right: 1px solid #F3E3E5;
+}
+
+.solution-body {
+    background: #ffffff;
+    border-bottom: 1px solid #dff0d8;
+    border-left: 1px solid #dff0d8;
+    border-right: 1px solid #dff0d8;
+}
+
+
+.solution-icon {
+  float: right;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+
+
+/*  page width  */
+
+.book .book-body .page-wrapper .page-inner {
+  max-width: 900px !important;
+}
+
+

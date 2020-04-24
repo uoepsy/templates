@@ -1,0 +1,19 @@
+bookdown::gitbook:
+  css: style.css
+  includes:
+    in_header: toggling.html
+  config:
+    toc:
+      before: |
+        <li><a href="./">DAPR2</a></li>
+      after: |
+        <li><a href="https://www.handbooks.psy.ed.ac.uk/psychology-2a-and-2b/dapr2" target="blank">Psychology Handbooks</a></li>
+      collapse: section
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default

@@ -1,0 +1,6 @@
+.DS_Store
+.Rhistory
+.Rproj.user
+template_bookdown/.Rproj.user/*
+template_coursework/.Rproj.user/*
+template_slides/.Rproj.user/*

@@ -1,0 +1,136 @@
+---
+title: |
+  ![](images/dapr1.png){width=0.51in} \protect \linebreak
+  Data Analysis for Psychology in R 1  \protect \linebreak
+  Coursework report
+subtitle: "Department of Psychology, The University of Edinburgh"
+date: "Academic year 2020-2021"
+output:
+  pdf_document:
+    latex_engine: xelatex
+urlcolor: blue
+header-includes:
+  - \usepackage{fontspec}
+  - \setmainfont{Roboto}
+---
+
+```{r setup, include=FALSE}
+####
+# Will default to not evaluate code chunks (so you can put rough solutions in here if that helps writing)
+
+# for things you want evaluated and included in the coursework instructions (e.g., plots, tables), just set eval=TRUE in the relevant chunk
+####
+knitr::opts_chunk$set(echo = FALSE, eval=FALSE, warning=FALSE, message=FALSE)
+```
+
+# Key Dates
+**Coursework set**: 12noon, Monday 23rd March 2020     
+**Coursework due**: 12noon, Thursday __7th May__ 2020   
+**Feedback returned**: Thursday 28th May 2020   
+
+# Instructions  
+
+You need to produce a report answering the assignment questions detailed on the following pages. 
+You are provided with the description of a research project and an accompanying data set. Your task is to describe and analyse the data in order to provide answers to the research questions. Analyses will draw on the methodologies we have discussed in lectures and labs.  
+
+Try to write your report as if you are writing a paper, or your dissertation - i.e., write an analysis section and a results section.   
+
+The analyses section should detail the appropriate analyses you undertook and how they will provide answers to the research questions. The results section should present and discuss your findings, utilising graphics where necessary to illustrate your points. Analyses will draw on the methodologies we have discussed in lectures and labs.    
+
+__Please note that this is an individual assignment and you are expected to work on your own with respect to both R code and report.__
+
+## Grading
+
+Marks will be awarded for providing evidence of the ability to understand and execute appropriate methodologies to answer each of the questions.  
+
+Additionally:  
+
++ 10 percentage points of the grade will be deducted if your code produces any errors.
++ 10 percentage points of the grade will be allocated to the use of inline R code.  
+
+For example, if your report scores 65 and your code throws at least one error, your final grade will be 55.
+
+## Queries concerning the task  
+
+This document contains a basic overview of the task and of how to submit it. If you have any questions concerning the coursework report, we ask that you post them on the designated section of the on-line discussion board on Learn. If you have a question, it is likely your classmates may have the same question. Before posting a question, please check the on-line board in case it has already been answered.
+
+\pagebreak
+
+#### Helpful hints for writing reports:   
+
++ Important things that your report should clearly describe: 
+  + your decisions in cleaning the data
+  + your statistical approach to answering each question (in detail - for instance, explain model structures) 
+  + your results
+  + your interpretation of these results and how this answers the question.
++ A reader of your report should be able to more or less replicate your analyses **without** referring to your R code. 
+  
+## Report Formatting  
+  
++ Figures and tables should be numbered and captioned, and referred to in the text; important statistical outcomes should be summarised in the text.
++ Reporting should follow APA 7th Edition guidelines for the presentation of tables, figures, and statistical results. 
+<!-- Alternative style is acceptable so long as it is clear and consistent. -->
++ Your report should be a maximum of 6 sides of single-spaced A4 (including tables and figures), in a standard font, size 12, with normal 1 inch margins.  
+
+## Code    
+
+You are required to submit a .Rmd document which reproduces the answers you give in the report.  
+  
+__IMPORTANT:__ Some functions may involve randomly generating numbers, and so results will vary slightly each time you run them. To ensure that your results are the same each time, at the top of your code, use `set.seed()` to set the random seed. Choose a number (any length) and pass it to `set.seed()`. Then, every time you run random number generations, it will produce the same results.  
+  
+For example:  
+```{r echo=TRUE, eval=FALSE}
+set.seed(8675309) # This is an example, choose your own! 
+```
+
+\begin{center}\rule{0.5\linewidth}{0.5000000000pt}\end{center}
+
+## Submission instructions: Read carefully!
+
+Please submit a RMarkdown (.rmd) file on-line via the Turnitin link on the LEARN page for DAPR1. The submission link will become available after you click on the “Own work declaration” link.  
+  
+__Please include your exam number in your filename. For instance, *B123405.Rmd*__
+  
+Prior to submitting, check the following:  
+
++ Does it compile? (i.e., can you `knit` your Rmarkdown document into either .html or .pdf?)  
++ Does the code run line-by-line without throwing any errors?  
+
+
+  
+\pagebreak
+
+
+# COURSEWORK TASK
+
+A researcher is interested in the ???  
+Data is collected on ??  
+
+Using the data described in Table \ref{tab:tab1} and available (in **.csv** format) at [LINK](url), conduct, interpret and write up a set of analyses that answer the researcher’s research question.  
+
+### Research Question  
+
+1. ?  
+
+```{r eval=TRUE, echo=FALSE}
+library(kableExtra)
+library(tidyverse)
+dict <- tibble(
+  variable = c("ID","Child_gend","Dep1","Dep2","Dep3","Dep4","Dep5","Dep6"),
+  description = c("Unique participant identifier",
+                  "Gender with 0=female, 1=male",
+                  "‘Anhedonia’ measured on a 5-point Likert scale",
+                  "‘Lack of hope’ measured on a 5-point Likert scale",
+                  "‘Lack of energy’ measured on a 5-point Likert scale",
+                  "‘Sad without reason’ measured on a 5-point Likert scale",
+                  "‘Tired all the time’ measured on a 5-point Likert scale",
+                  "‘Feeling worthless’ measured on a 5-point Likert scale")
+)
+kable(dict, "latex", booktabs = T, caption="\\label{tab:tab1}EXAMPLE - Data Dictionary") %>% 
+  column_spec(2:3, width = "15cm") %>%
+  kable_styling(latex_options = "striped") %>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+
+
