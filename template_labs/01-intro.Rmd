@@ -25,7 +25,15 @@ This is the first question.
 `r qend()`	
 
 `r solbegin()`	
-Hello, I'm a solution.	
+```{r}
+x <- rnorm(10)
+```
+
+Hello, I'm a solution.
+
+```{r}
+x <- 2 * rnorm(10)
+```
 `r solend()`	
 
 `r qbegin()`	
@@ -70,7 +78,7 @@ Who knows!
 
 This is a another frame, but with a header.
 I am trying to add more lines to see what happens.
-Who knows!
+Who knows! Lower baseline with letter g.
 :::	
 
 

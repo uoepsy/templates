@@ -37,8 +37,9 @@ pre code {
 
 div.lo, div.blue, div.red, div.green, div.yellow, div.frame { 
   border-radius: 5px; 
-  padding: 15px 20px 5px 20px; 
-  margin-bottom: 15px; 
+  padding: 20px 20px 10px 20px; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
 
 .lo, .blue { 
@@ -66,10 +67,10 @@ div.lo, div.blue, div.red, div.green, div.yellow, div.frame {
 /* Questions and solutions */
 
 .question-begin, .solution-begin {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px; 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: 600; 
 }
 
@@ -90,10 +91,10 @@ div.lo, div.blue, div.red, div.green, div.yellow, div.frame {
 
 
 .question-body, .solution-body {
-    padding: 10px 20px 1px 20px;
+    padding: 20px 20px 10px 20px; 
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .question-body {
@@ -114,7 +115,7 @@ div.lo, div.blue, div.red, div.green, div.yellow, div.frame {
 .solution-icon {
   float: right;
   position: absolute;
-  right: 1em;
+  right: 20px;
   top: 50%;
   transform: translate(0,-50%);
 }
