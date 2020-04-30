@@ -1,14 +1,6 @@
 --- 
-title: <svg width="50" height="50">
-    <rect x="0" y="0" width="50" height="50"
-    style="fill:#BF1932;stroke:none;opacity:1" />
-  </svg> 
-  <svg width="50" height="50">
-    <rect x="0" y="0" width="50" height="50"
-    style="fill:#BF1932;stroke:none;opacity:1" />
-  </svg> 
-  <br>
-  Data Analysis for Psychology in R 2
+title: |
+  <div style="color: #BF1932;">Data Analysis for Psychology in R 2</div>
 author: "Department of Psychology, The University of Edinburgh"
 date: "Academic year 2020-2021"
 site: bookdown::bookdown_site
