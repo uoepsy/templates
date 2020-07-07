@@ -2,7 +2,7 @@ name: "DAPR2"
 output_dir: "../docs/labs"
 navbar:
   title: "DAPR2"
-  type: inverse
+  type: default
   left:
     # - text: "Home"
     #   href: index.html

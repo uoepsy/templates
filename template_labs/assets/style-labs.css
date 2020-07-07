@@ -1,19 +1,19 @@
 /* navbar */
-.navbar-inverse, .navbar-inverse .active a, .navbar-inverse .navbar-collapse, .navbar-toggle, .navbar-inverse .navbar-nav .dropdown-toggle, .navbar-inverse .navbar-nav .dropdown-menu.active, .list-group-item.active {
+.navbar-default, .navbar-default .active a, .navbar-default .navbar-collapse, .navbar-toggle, .navbar-default .navbar-nav .dropdown-toggle, .navbar-default .navbar-nav .dropdown-menu.active, .list-group-item.active {
     background-color: #BF1932 !important;
     border-color: #BF1932 !important;
 }
-.navbar-inverse .navbar-nav .dropdown-menu a {
+.navbar-default .navbar-nav .dropdown-menu a {
   background-color: #ffffff !important;
-  color: #333333 !important;
+  color: #BF1932 !important;
 }
-.navbar-inverse .navbar-nav .dropdown-menu .active a, .navbar-inverse .navbar-nav .dropdown-menu a:hover {
+.navbar-default .navbar-nav .dropdown-menu .active a, .navbar-default .navbar-nav .dropdown-menu a:hover {
   background-color: #BF1932 !important;
   color: #ffffff !important;
 }
-.navbar-inverse a:hover, .navbar-inverse .active a:focus, .navbar-inverse .navbar-nav .open a:hover, .list-group-item.active:hover {
-    background-color: #BF1944 !important;
-    border-color: #BF1944 !important;
+.navbar-default a:hover, .navbar-default .active a:focus, .navbar-default .navbar-nav .open a:hover, .list-group-item.active:hover {
+    background-color: rgb(166, 5, 29) !important;
+    border-color: rgb(166, 5, 29) !important;
 }
 
 
