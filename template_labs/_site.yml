@@ -4,10 +4,6 @@ navbar:
   title: "DAPR2"
   type: default
   left:
-    # - text: "Home"
-    #   href: index.html
-    - icon: "fa-home"
-      href: index.html
     - text: "Weekly materials"
       menu:
       - text: "Lab 1: Models and functions"
