@@ -4,11 +4,11 @@ navbar:
   title: "DAPR2"
   type: default
   left:
-    # - text: "Home"
-    #   href: index.html
-    - icon: "fa-home"
+    - text: "Home"
+      icon: "fa-home"
       href: index.html
     - text: "Weekly materials"
+      icon: "fa-book"
       menu:
       - text: "Lab 1: Models and functions"
         href: 01-models.html
@@ -16,6 +16,7 @@ navbar:
         href: 02-models.html
   right:
     - text: "About"
+      icon: "fa-info-circle"
       href: about.html
 output: 
   bookdown::html_document2:

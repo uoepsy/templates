@@ -188,3 +188,15 @@ div.int {
 }
 
 
+
+/* HEADERS */
+
+h1 {
+  padding-top: 2em !important;
+  margin-top: -1em !important;
+}
+
+h2, h3, h4, h5, h6 {
+  padding-top: 2em !important;
+  margin-top: -1em !important;
+}
