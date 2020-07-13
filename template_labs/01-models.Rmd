@@ -1,6 +1,8 @@
 ---
 title: "Models and functions"
 bibliography: references.bib
+biblio-style: apalike
+link-citations: true
 params: 
     SHOW_SOLS: TRUE
     TOGGLE: TRUE
