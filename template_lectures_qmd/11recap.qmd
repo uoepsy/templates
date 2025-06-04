@@ -1,0 +1,183 @@
+---
+title: "EXAMPLE!"
+author: "Josiah King"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(patchwork)
+source('_theme/theme_quarto.R')
+```
+
+# Course Overview
+
+```{r}
+#| results: "asis"
+#| echo: false
+block1_name = "multilevel modelling<br>working with group structured data"
+block1_lecs = c("regression refresher",
+                "introducing multilevel models",
+                "more complex groupings",
+                "centering, assumptions, and diagnostics",
+                "recap")
+block2_name = "factor analysis<br>working with multi-item measures"
+block2_lecs = c(
+  "what is a psychometric test?",
+  "using composite scores to simplify data (PCA)",
+  "uncovering underlying constructs (EFA)",
+  "more EFA",
+  "recap & exam prep"
+  )
+
+source("https://raw.githubusercontent.com/uoepsy/junk/main/R/course_table.R")
+
+course_table(block1_name,block2_name,block1_lecs,block2_lecs,week=10)
+```
+
+
+# This week {transition="slide"}
+
+- Lec1: Recap of core concepts
+- Lec2: Exam prep session
+- Lab: Mock Exam Qs
+
+# Broad ideas 
+
+## multivariate
+
+
+
+::::{.columns}
+:::{.column width="50%"}
+__mixed models/multi-level models__  
+
+- multiple values per cluster
+- each value is an observation
+
+
+```{r}
+#| echo: false
+tibble(
+  person = rep(1:3,e=3),
+  y = "...",
+  x = "...",
+  ` ...`= "..."
+) |> gt::gt()
+```
+
+:::
+:::{.column width="50%"}
+__pscyhometrics__  
+
+- multiple values ($y1, ..., y_k$) representing the same construct
+- the set of values is "an observation" of Y
+
+```{r}
+#| echo: false
+tibble(
+  person = c(1:3,"..."),
+  y1 = c("..."),
+  y2 = c("..."),
+  y3 = c("..."),
+  ` ...` = c("..."),
+) |> gt::gt()
+```
+
+:::
+::::
+
+## two questions
+
+
+:::{.incremental}
+
+- Q: To do anything with [construct Y], how do we get one number to represent an observation of Y?  
+    - is one number enough - are $y1,y2,...,yk$ really unidimensional?  
+    
+<br><br>    
+    
+- Q: How does [set of scores $y1,y2,...,yk$] get at [construct Y]?  
+    - is it a reliable measure?
+    - are the variables equally representative?
+    - is there just one dimension to Y or are there multiple?
+
+
+:::
+
+
+
+## scoring multi-item measures
+
+
+::::{.columns}
+:::{.column width="50%"}
+**scale scores**  
+add 'em all up, you've got Y  
+
+- clinically 'meaningful'?  
+- but only 'meaningful' if underlying model holds (which it almost definitely doesn't!)  
+    
+:::
+
+:::{.column width="50%"}
+**dimension reduction**  
+identify dimensions that capture how people co-vary across across the items
+
+- PCA: reduce to set of orthogonal dimensions sequentially capturing most variability
+
+- FA: develop theoretical model of underlying dimensions (possibly correlated) that explain variability in items  
+
+:::
+::::
+
+
+## understanding multi-item measures
+
+::::{.columns}
+:::{.column width="50%"}
+
+:::
+
+:::{.column width="50%"}
+**dimension reduction**  
+
+:::{style="opacity:.4"}
+identify dimensions that capture how people co-vary across across the items
+
+- PCA: reduce to set of orthogonal dimensions sequentially capturing most variability
+    
+::: 
+
+- FA: develop theoretical model of underlying dimensions (possibly correlated) that explain variability in items  
+
+:::
+::::
+
+## understanding multi-item measures
+
+$$
+\begin{align}
+\text{Outcome} &=& \text{Model} &\quad + \quad& \text{Error} \\
+\quad \\
+\text{observed correlation} &=& \text{factor loadings and} &\quad + \quad& \text{unique variance for} \\
+\text{matrix of items}& &\text{factor correlations} &\quad + \quad& \text{each item} \\
+\end{align}
+$$
+
+# section 2
+
+
+# End!  
+
+
+
+
+
+
+
+
+

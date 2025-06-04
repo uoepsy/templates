@@ -1,0 +1,37 @@
+project:
+  type: website
+  render: 
+    - "*.qmd"
+    - "!todo/*"
+    - "!archive/*"
+  # point output dir to the relevant place in main docs of the repo
+  # output-dir: ../docs/2526/labs/ 
+  output-dir: docs/
+
+website:
+  title: "COURSE Lab Exercises"
+  sidebar:
+    style: "floating"
+    search: true
+    collapse-level: 2
+    contents:
+      - csstests.qmd
+
+
+format:
+  html:
+    page-layout: full
+    toc: true
+    toc_float: true
+    theme: 
+      - united
+      - assets/style-labs.scss
+    include-in-header: 
+      - "assets/toggling.html"
+      - text: |
+          <link rel="stylesheet" href="https://uoepsy.github.io/assets/css/ccfooter.css" />
+    link-citations: true
+    number-sections: false
+    code-copy: true
+
+
