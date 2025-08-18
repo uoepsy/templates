@@ -94,7 +94,7 @@ It is good practice to develop course material in the course-specific folders on
 ## How do I contribute?
 
 1. Obtain a GitHub account
-1. Install the [GitKraken Git GUI client](https://www.gitkraken.com/download)
+1. Install the [GitKraken Git GUI client](https://www.gitkraken.com/download) (not necessary if you already use Git on the command line)
 1. Clone the online repository from GitHub to your PC
 1. Create or edit course material on your local copy of the repository
 1. Make sure to transfer your work to the repository stored online on GitHub
