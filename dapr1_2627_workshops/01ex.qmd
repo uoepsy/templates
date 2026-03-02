@@ -1,5 +1,5 @@
 ---
-title: "W1: Example Lab"
+title: "W1: Example Workshop"
 params: 
     SHOW_SOLS: TRUE
     TOGGLE: TRUE

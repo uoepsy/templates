@@ -6,12 +6,12 @@ project:
   output-dir: ./wip/
 
 website:
-  title: "DAPR1 Lab Exercises"
+  title: "DAPR1 Workshops"
   navbar: 
     background: primary
     search: true
     left:
-      - text: "Block 1: Intro & Descriptis"
+      - text: "Block 1: Intro & Descriptives"
         menu: 
           - 01ex.qmd
           - 02ex.qmd
@@ -30,7 +30,7 @@ format:
     page-layout: full
     theme: 
       - united
-      - assets/style-labs.scss
+      - assets/style-workshops.scss
     include-in-header: 
       - "assets/toggling.html"
       - text: |
