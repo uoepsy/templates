@@ -1,0 +1,65 @@
+---
+title: "W1: Example Lab"
+params: 
+    SHOW_SOLS: TRUE
+    TOGGLE: TRUE
+format: html
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+source('assets/dropdowns.R')
+source('assets/setup.R')
+```
+
+:::frame
+__Dataset: XXXXX.csv__ 
+
+**Background**
+lorem ipsum blah blah blah  
+I want to know about **X?**
+
+:::
+
+
+`r qbegin(qcounter())`
+do we want questions like this? or do we just want a bullet point list?  
+
+::: {.callout-tip collapse="true"}
+#### Hints
+
+hinty mchint-face
+
+:::
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+here's my answer
+`r solend()`
+
+
+`r qbegin(qcounter())`
+here is my question
+
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+here's my answer
+`r solend()`
+
+
+`r qbegin(qcounter())`
+here is my question
+
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+here's my answer
+`r solend()`
+
+
+:::{.divider}
+
+:::
+
+# I'd like some more please! (Extra Exercises)
+
+i think if we have things sort of pre-written from labs that are interesting/useful but not crucial, we should have (some of) them available for students to deepen their understanding. 

@@ -1,0 +1,40 @@
+project:
+  type: website
+  render: 
+    - "*.qmd"
+    - "!todo/*"
+  output-dir: ./wip/
+
+website:
+  title: "DAPR1 Lab Exercises"
+  navbar: 
+    background: primary
+    search: true
+    left:
+      - text: "Block 1: Intro & Descriptis"
+        menu: 
+          - 01ex.qmd
+          - 02ex.qmd
+          - 03ex.qmd
+          - 04ex.qmd
+          - 05ex.qmd
+          - B1.qmd
+      - text: "Block 2"
+        # menu: 
+          # - 07ex.qmd
+      - text: "Block 3"
+      - text: "Block 4"
+
+format:
+  html:
+    page-layout: full
+    theme: 
+      - united
+      - assets/style-labs.scss
+    include-in-header: 
+      - "assets/toggling.html"
+      - text: |
+          <link rel="stylesheet" href="https://uoepsy.github.io/assets/css/ccfooter.css" />
+    link-citations: true
+    number-sections: false
+    code-copy: true

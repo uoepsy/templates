@@ -1,0 +1,55 @@
+---
+title: "BLOCK 1 Formative Submission"
+params: 
+    SHOW_SOLS: FALSE
+    TOGGLE: TRUE
+format: html
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+source('assets/dropdowns.R')
+source('assets/setup.R')
+```
+
+:::frame
+__Dataset: YYYY.csv__
+
+**Background**
+lorem ipsum blah blah blah  
+I want to know about **X?**
+
+
+:::
+
+`r qbegin(label="**SKILL:** I can manage libraries/packages in R.", qlabel=FALSE)`
+
+
+open new R script. load X package
+
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+
+`r solend()`
+
+
+
+`r qbegin(label="**SKILL:** I can extract specific subsets of a given dataset.    ",qlabel=FALSE)`
+
+print out just the data for "Anonymous Aardvark". 
+
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+
+`r solend()`
+
+
+`r qbegin(label="**SKILL:** I can describe in writing the variables used in a statistical analysis.", qlabel=FALSE)`
+  
+provide a written description of the sample in the study
+
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+
+`r solend()`

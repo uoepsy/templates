@@ -1,0 +1,16 @@
+---
+title: "W3: "
+params: 
+    SHOW_SOLS: TRUE
+    TOGGLE: TRUE
+format: html
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+source('assets/dropdowns.R')
+source('assets/setup.R')
+```
+
+
