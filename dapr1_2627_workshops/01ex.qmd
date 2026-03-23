@@ -20,7 +20,14 @@ __Dataset: XXXXX.csv__
 lorem ipsum blah blah blah  
 I want to know about **X?**
 
+
 :::
+
+
+<!-- MAX 5 QUESTIONS -->
+<!-- make each question ~10 minute work -->
+<!-- MAX 5 QUESTIONS -->
+<!-- MAX 5 QUESTIONS -->
 
 
 `r qbegin(qcounter())`
@@ -38,6 +45,8 @@ here's my answer
 `r solend()`
 
 
+
+
 `r qbegin(qcounter())`
 here is my question
 
@@ -45,6 +54,30 @@ here is my question
 `r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
 here's my answer
 `r solend()`
+
+
+
+
+`r qbegin(qcounter())`
+here is my question
+
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+here's my answer
+`r solend()`
+
+
+
+
+`r qbegin(qcounter())`
+here is my question
+
+`r qend()`
+`r solbegin(show=params$SHOW, toggle=params$TOGGLE)`
+here's my answer
+`r solend()`
+
+
 
 
 `r qbegin(qcounter())`
