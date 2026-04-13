@@ -122,12 +122,6 @@ abc?
 :::{.column width="50%"}
 **Tasks:**
 
-<br>
-
-![](figs/readings.svg){width=80px style="margin:10px;margin-bottom:-30px"} Check out the readings
-
-<br>
-
 ![](figs/labs.svg){width=80px style="margin:10px;margin-bottom:-50px"} Work on exercises in labs
 
 <br>
